@@ -4,7 +4,7 @@
 body{
     width: 100%;
     height: auto;
-    background-image: url('/images/mainBG.jpg');
+    background-image: url('images/mainBG.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-color: antiquewhite; */
@@ -43,7 +43,7 @@ footer{
   }
 @media only screen and (max-width: 728px) {
     body{
-        background-image: url(/images/phoneBG.jpg);
+        background-image: url(images/phoneBG.jpg);
     }   
     .left-div{
         float:left;
