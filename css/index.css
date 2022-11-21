@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-image: url('/images/mainBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: antiquewhite; */
+    padding: 10px;
+}
+header{
+    background-color: rebeccapurple;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+.main{
+    width: 80%;
+    height: 60%;
+    float: left;
+    background-color: aquamarine;
+}
+.left-div{
+    width: 10%;
+    float: left;
+    background-color: yellow;
+}
+.right-div{
+    width: 10%;
+    float: left;
+    background-color: green;
+    padding-left: 20px;
+}
+.div-container::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+@media only screen and (max-width: 728px) {
+    body{
+        background-image: url(/images/phoneBG.jpg);
+    }   
+    .left-div{
+        float:left;
+        position:relative;
+        left: -7%;
+    }
+    .right-div{
+        width: 10%;
+        float: left;
+        position:relative;
+        padding-left: 20px;
+        right: -5%;
+    }
+    .left-div:-ms-touch-action{
+        float:left;
+        position:relative;
+        left: 10%;
+    }
+    .right-div{
+        width: 10%;
+        float: left;
+        position:relative;
+        padding-left: 20px;
+        right: -5%;
+    }
+}
