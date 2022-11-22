@@ -42,8 +42,14 @@ body {
     /* max-width: 1100px; */
     margin: auto;
     animation: 2s, ease-out 1s 1 appearAnimation;
-
-
+    max-height: 100%;
+}
+.div-container{
+    max-width: 100%;
+    max-height: 85.7%;
+    /* background-color: red; */
+    padding-top: 17.5%;
+    padding-bottom: 17.5%;
 }
 header{
     /* background-color: rebeccapurple; */
@@ -56,14 +62,7 @@ footer{
     /* background: #ddd; */
     margin-top: 10px;
 }
-.div-container{
-    display: flex;
-    max-width: 100%;
-    max-height: 60%;
-    height: 795px;
-}
 .main{
-    display: flex;
     justify-content: center;
     width: 80%;
     height: 100%;
@@ -81,29 +80,29 @@ footer{
     float: left;
     /* background-color: green; */
 }
-.shared{
+/* .shared{
     padding-bottom: 35%;
-}
-.div-container::after{
-    content: "";
-    display: table;
-    clear: both;
-  }
+} */
 .box{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
     text-align: center;
     color: white;   
-    width: 15%;
-    background-color: gray;
+    width: 220px;
+    background-color: rgb(143, 42, 42);
     border: 1px black solid;
     border-radius: 5px;
-    max-width: 20%;
+    max-width: 90%;
     height: 200px;
 }
 .Input{
+    padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(63, 26, 26);
     transition: all 0.5s;
+    color: white;
 }
 .Input:focus{
     background-color: rgb(119, 119, 119);
@@ -116,32 +115,47 @@ footer{
     right: 0;
     margin: auto;
 }
+button {
+    background: #0e0b22;
+    color: #fff;
+    padding: 0.6rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.5s, box-shadow 1s;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #1e1d25;
+    transform: rotate(10deg);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:active{
+    transform: translateY(5px);
+}
 @media only screen and (max-width: 728px) {
     body{
         background-image: url(images/phoneBG.jpg);
     }   
+    .main{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        float: left;
+        background-color: aquamarine; 
+        animation: 1s, ease-out 0.5s 1 appearAnimation;
+    }
     .left-div{
-        float:left;
-        position:relative;
-        left: -7%;
+        display: none;
     }
     .right-div{
-        width: 10%;
-        float: left;
-        position:relative;
-        padding-left: 20px;
-        right: -5%;
+        display: none;
     }
-    .left-div:-ms-touch-action{
-        float:left;
-        position:relative;
-        left: 10%;
-    }
-    .right-div{
-        width: 10%;
-        float: left;
-        position:relative;
-        padding-left: 20px;
-        right: -5%;
+    .box{
+        max-width: 90%;
+        width: max-content;
+
     }
 }
