@@ -14,6 +14,7 @@ async function gett(login, password){
         },
         {
             headers: {
+                "Access-Control-Allow-Origin": "*",
                 'Content-Type': 'application/json',
                 'api-key': '7NncCa9VIkemRX4RlrWvtkb4ukxHNU9aw27MUUdN5KV8tUicem1Z8AYHFuUcG96O'
             }
@@ -45,6 +46,7 @@ async function postt(UId, LoginVar, PaswVar, NameVar,SurnameVar,ClassVar,GroupVa
         },
         {
             headers: {
+                "Access-Control-Allow-Origin": "*",
                 'Content-Type': 'application/json',
                 'api-key': '7NncCa9VIkemRX4RlrWvtkb4ukxHNU9aw27MUUdN5KV8tUicem1Z8AYHFuUcG96O'
             }
